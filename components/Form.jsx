@@ -279,6 +279,25 @@ const FormComponent = () => {
                 </div>
               </div>
             </div>
+            <div className="p-2">
+              <h3 className="text-sm font-bold text-gray-700">
+                POPIA COMPLIANT
+              </h3>
+              <p className="mt-1 text-xs text-gray-600">
+                The Protection of Personal Information Act (POPI Act) comes into
+                effect on 1 July 2021 and to remain compliant with its
+                provisions SAIMI would like to give you, as its stakeholder, the
+                opportunity to unsubscribe should you wish to not receive any
+                further communication from SAIMI.
+              </p>
+              <p className="mt-1 text-xs text-gray-600">
+                SAIMI regularly sends communication to its stakeholders to
+                inform them of any upcoming events and other industry related
+                news. Your email address forms part of the SAIMI stakeholders’
+                database and is used for the purpose of communicating the
+                abovementioned information.
+              </p>
+            </div>
             <div className="flex w-full justify-end rounded-bl rounded-br bg-gray-300 py-4 px-4 sm:px-12">
               <button
                 disabled={loading}
