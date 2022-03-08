@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import { useForm, useFormState } from 'react-hook-form'
+import Notification from './Notification'
 
 const FormComponent = () => {
   const [loading, setLoading] = useState(false)
+
+  const [show, setShow] = useState(false)
 
   const {
     register,
@@ -37,8 +40,8 @@ const FormComponent = () => {
     console.log(mailchimpResponse)
 
     if (mailchimpResponse?.response?.source === 'API - Generic') {
-      alert('Thank you for your response')
       setLoading(false)
+      setShow(true)
       return
     } else {
       const errorMessage = JSON.parse(mailchimpResponse.message.response.text)
@@ -50,8 +53,9 @@ const FormComponent = () => {
   console.log(errors)
 
   return (
-    <div className="mx-auto mt-8 max-w-4xl">
-      <div>
+    <div className="relative">
+      {show && <Notification show={show} setShow={setShow} />}
+      <div className="mx-auto mt-8 max-w-4xl">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="container mx-auto rounded bg-white shadow"
