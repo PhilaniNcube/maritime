@@ -279,7 +279,7 @@ const FormComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="p-2">
+            <div className="mx-auto flex w-4/6 flex-col justify-center p-2">
               <h3 className="text-sm font-bold text-gray-700">
                 POPIA COMPLIANT
               </h3>
@@ -301,7 +301,7 @@ const FormComponent = () => {
             <div className="flex w-full justify-end rounded-bl rounded-br bg-gray-300 py-4 px-4 sm:px-12">
               <button
                 disabled={loading}
-                className="rounded bg-indigo-700 px-8 py-2 text-sm text-white transition duration-150 ease-in-out hover:bg-indigo-600 focus:outline-none"
+                className="rounded bg-custom px-8 py-2 text-sm text-white transition duration-150 ease-in-out hover:bg-sky-800 focus:outline-none"
                 type="submit"
               >
                 {loading ? 'Loading...' : 'Save'}
@@ -310,7 +310,6 @@ const FormComponent = () => {
           </div>
         </form>
       </div>
-      ;
     </div>
   )
 }
