@@ -62,7 +62,7 @@ const FormComponent = () => {
         >
           <div>
             <div className="w-full border-b border-gray-300">
-              <img src="/images/banner.jpg" alt="" />
+              <img src="/images/banner.jpeg" alt="" />
             </div>
             <div className="mx-auto w-10/12">
               <div className="container mx-auto">
