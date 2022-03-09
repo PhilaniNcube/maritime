@@ -283,7 +283,7 @@ const FormComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="mx-auto flex w-4/6 flex-col justify-center p-2">
+            <div className="mx-auto p-2">
               <h3 className="text-sm font-bold text-gray-700">
                 POPIA COMPLIANT
               </h3>
