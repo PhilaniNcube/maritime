@@ -219,8 +219,8 @@ const FormComponent = () => {
                           id="province"
                           className="z-10 w-full appearance-none rounded border border-transparent bg-white py-3 pl-3 text-sm text-gray-800 focus:border-indigo-700  focus:outline-none"
                         >
-                          <option value="Buffalo City Maritime Clusters">
-                            Buffalo City Maritime Clusters
+                          <option value="Buffalo City Maritime Cluster">
+                            Buffalo City Maritime Cluster
                           </option>
                           <option value=" Ethekwini Maritime Cluster">
                             {' '}
@@ -234,9 +234,9 @@ const FormComponent = () => {
                             {' '}
                             Western Cape Maritime Cluster
                           </option>
-                          <option value=" Gauteng Maritime Cluster">
+                          <option value=" Garden Route Maritime Cluster">
                             {' '}
-                            Gauteng Maritime Cluster
+                            Garden Route Maritime Cluster
                           </option>
                           <option value=" Other"> Other</option>
                         </select>
